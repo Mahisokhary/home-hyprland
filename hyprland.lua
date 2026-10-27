@@ -16,7 +16,7 @@ end)
 -- Apps
 APP_TERMINAL="kitty"
 APP_LAUNCHER="rofi -show drun -show-icons"
-APP_FILES="nautilus"
+APP_FILES="nautilus --new-window"
 TRANSPARENT_APPS_CLASSES = {
 	"kitty",
 	"org.gnome.Rhythmbox3",
