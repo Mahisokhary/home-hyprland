@@ -16,4 +16,6 @@
 - chromium  (optional) (auto start)
 - playerctl (playing media controll (pause/play, previous/next))
 - wl-clipboard (CLI copy/paste utilities)
+- ttf-nerd-fonts-symbols-mono (symbols)
+- noto-fonts-emoji (emoji)
 
