@@ -5,5 +5,6 @@ hl.window_rule({
 		title	= "Media viewer",
 	},
 	opacity	= 1.0,
+	float	= true,
 })
 
