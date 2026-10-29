@@ -7,4 +7,5 @@ require("compatibility.telegram")
 require("compatibility.rhythmbox")
 require("compatibility.maximize")
 require("compatibility.waybar")
+require("compatibility.modal")
 
