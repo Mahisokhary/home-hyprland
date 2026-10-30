@@ -6,5 +6,6 @@ hl.window_rule({
 	},
 	opacity	= 1.0,
 	float	= true,
+	fullscreen = true,
 })
 
