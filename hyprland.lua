@@ -4,9 +4,9 @@ hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("waybar")
-	hl.exec_cmd("awww-daemon")
-	hl.exec_cmd("swaync")
+	hl.exec_cmd("~/.config/hypr/core/script/run-service waybar")
+	hl.exec_cmd("~/.config/hypr/core/script/run-service awww")
+	hl.exec_cmd("~/.config/hypr/core/script/run-service swaync")
 
 	hl.exec_cmd("rhythmbox", { workspace="special:magic silent" })
 	hl.exec_cmd("Telegram", { workspace="special:magic silent" })
