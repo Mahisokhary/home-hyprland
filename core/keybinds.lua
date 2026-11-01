@@ -1,6 +1,7 @@
 hl.bind(MAIN_MOD .. " + apostrophe", hl.dsp.exec_cmd(APP_TERMINAL))
 hl.bind(MAIN_MOD .. " + slash", hl.dsp.exec_cmd(APP_LAUNCHER))
 hl.bind(MAIN_MOD .. " + semicolon", hl.dsp.exec_cmd(APP_FILES))
+hl.bind(MAIN_MOD .. " + period", hl.dsp.exec_cmd(APP_USER_SERVICE_CTL))
 
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
