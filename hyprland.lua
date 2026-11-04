@@ -29,6 +29,9 @@ MAIN_MOD = "SUPER"
 LAYOUT = "scrolling"
 THEME = "default"
 
+-- Includes optional local override script
+pcall(require, "override") -- failure is ignored
+
 -- Environment variables
 hl.env("QHOME_HYPRLAND_THEME", THEME)
 
