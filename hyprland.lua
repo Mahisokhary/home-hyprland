@@ -6,16 +6,6 @@ hl.env("GTK_THEME", "Adwaita:dark")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
-hl.on("hyprland.start", function()
-	hl.exec_cmd("~/.config/hypr/core/script/run-service waybar")
-	hl.exec_cmd("~/.config/hypr/core/script/run-service awww awww-daemon")
-	hl.exec_cmd("~/.config/hypr/core/script/run-service swaync")
-
-	hl.exec_cmd("rhythmbox", { workspace="special:magic silent" })
-	hl.exec_cmd("Telegram", { workspace="special:magic silent" })
-	hl.exec_cmd("chromium", { workspace="special:magic silent" })
-end)
-
 -- Apps
 APP_TERMINAL="kitty"
 APP_LAUNCHER="rofi -show drun -show-icons"
@@ -27,6 +17,11 @@ TRANSPARENT_APPS_CLASSES = {
 	"jetbrains-.*",
 	"org.telegram.desktop",
 	"org.gnome.Nautilus",
+}
+SERVICES = {
+	"waybar",
+	"awww-daemon",
+	"swaync",
 }
 
 -- Configuration
@@ -42,4 +37,19 @@ require("core.core")
 require("layout.layout")
 require("design.design")
 require("compatibility.compatibility")
+
+local function run_services()
+	for index, service in ipairs(SERVICES) do
+		hl.exec_cmd("qhome-hyprland-run-service-themed " .. service)
+	end
+end
+
+hl.on("hyprland.start", function()
+	run_services()
+
+	hl.exec_cmd("rhythmbox", { workspace="special:magic silent" })
+	hl.exec_cmd("Telegram", { workspace="special:magic silent" })
+	hl.exec_cmd("chromium", { workspace="special:magic silent" })
+end)
+hl.on("config.reloaded", run_services)
 
