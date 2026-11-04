@@ -31,6 +31,9 @@ MAIN_MOD = "SUPER"
 LAYOUT = "scrolling"
 THEME = "default"
 
+-- Environment variables
+hl.env("QHOME_HYPRLAND_THEME", THEME)
+
 -- Modules
 require("core.core")
 require("layout.layout")
