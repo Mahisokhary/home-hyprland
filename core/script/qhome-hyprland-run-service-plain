@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#
+# Run a service (without systemd)
+# If another instance of service is running it will be killed
+# Usage:
+# run-service-plain [command] [args...]
+#
+
+! pidof $1 || pkill $1
+$@
+
