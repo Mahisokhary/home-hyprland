@@ -17,7 +17,8 @@
 		"network",
 	],
 	"bluetooth": {
-		"on-click": "kitty --title \"waybar-bluetoothctl\" -e bluetoothctl"
+		"on-click": "kitty --title \"waybar-bluetoothctl\" -e bluetoothctl",
+		"format-no-controller": "",
 	},
 	"mpris": {
 		"format": "{artist} - {title}",
