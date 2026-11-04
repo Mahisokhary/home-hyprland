@@ -1,6 +1,6 @@
-require("design.window.border")
-require("design.window.animation")
-require("design.window.transparent")
+require("design.default.window.border")
+require("design.default.window.animation")
+require("design.default.window.transparent")
 
 hl.config({
 	general = {
