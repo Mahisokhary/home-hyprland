@@ -1,4 +1,7 @@
 -- Environment variables
+if not os.getenv("QHOME_HYPRLAND_HOME") then
+	hl.env("QHOME_HYPRLAND_HOME", os.getenv("HOME") .. "/.config/hypr/")
+end
 hl.env("GTK_THEME", "Adwaita:dark")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
