@@ -28,12 +28,14 @@ SERVICES = {
 MAIN_MOD = "SUPER"
 LAYOUT = "scrolling"
 THEME = "default"
+WALLPAPER_DIR = "Pictures/Wallpapers"
 
 -- Includes optional local override script
 pcall(require, "override") -- failure is ignored
 
 -- Environment variables
 hl.env("QHOME_HYPRLAND_THEME", THEME)
+hl.env("QHOME_HYPRLAND_WALLPAPER_DIR", WALLPAPER_DIR)
 
 -- Modules
 require("core.core")
