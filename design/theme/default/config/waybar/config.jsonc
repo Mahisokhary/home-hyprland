@@ -23,7 +23,7 @@
 	"mpris": {
 		"format": "{artist} - {title}",
 		"ignored-players": ["chromium"],
-		"title-len": 20,
+		"title-len": 26,
 		"artist-len": 20,
 	},
 	"hyprland/workspaces": {
