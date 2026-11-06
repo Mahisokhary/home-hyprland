@@ -3,7 +3,7 @@
 ## Dependency
 > Tested on hyprland `0.56.2, 0.57.0`
 - waybar (status bar)
-- awww (wallpaper manager)
+- swaybg (wallpaper manager)
 - hyprpolkitagent (authentication agent)
 - swaync (notification manager)
 - grim, slurp (for taking screen shot)
