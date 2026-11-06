@@ -20,7 +20,6 @@ TRANSPARENT_APPS_CLASSES = {
 }
 SERVICES = {
 	"waybar",
-	"awww-daemon",
 	"swaync",
 }
 
@@ -28,18 +27,22 @@ SERVICES = {
 MAIN_MOD = "SUPER"
 LAYOUT = "scrolling"
 THEME = "default"
+WALLPAPER_DIR = "Pictures/Wallpapers"
 
 -- Includes optional local override script
 pcall(require, "override") -- failure is ignored
 
 -- Environment variables
 hl.env("QHOME_HYPRLAND_THEME", THEME)
+hl.env("QHOME_HYPRLAND_WALLPAPER_DIR", WALLPAPER_DIR)
 
 -- Modules
 require("core.core")
 require("layout.layout")
 require("design.design")
 require("compatibility.compatibility")
+
+table.insert(SERVICES, "swaybg --mode fill --image $(find '" .. WALLPAPER_DIR .. "' -maxdepth 1 -name '" .. THEME .. "*')")
 
 local function run_services()
 	for index, service in ipairs(SERVICES) do
