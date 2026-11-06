@@ -1,4 +1,4 @@
-require("design." .. THEME .. "." .. THEME)
+require("design.theme." .. THEME .. "." .. THEME)
 
 hl.window_rule({
 	name  = "transparent-apps",

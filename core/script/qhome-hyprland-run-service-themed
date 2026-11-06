@@ -7,6 +7,6 @@
 # run-service-themed [command] [args...]
 #
 
-export XDG_CONFIG_HOME="$QHOME_HYPRLAND_HOME/design/$QHOME_HYPRLAND_THEME/config/"
+export XDG_CONFIG_HOME="$QHOME_HYPRLAND_HOME/design/theme/$QHOME_HYPRLAND_THEME/config/"
 qhome-hyprland-run-service-plain $@
 

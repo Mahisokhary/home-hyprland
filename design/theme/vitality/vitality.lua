@@ -1,4 +1,4 @@
-require("design.default.default")
+require("design.theme.default.default")
 
 hl.config({
 	general = {

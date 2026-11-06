@@ -1,5 +1,5 @@
-require("design.default.window.border")
-require("design.default.window.animation")
+require("design.theme.default.window.border")
+require("design.theme.default.window.animation")
 
 hl.config({
 	general = {
