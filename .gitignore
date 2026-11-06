@@ -1,3 +1,9 @@
 # Because its LOCAL override of configuration
 override.lua
 
+# Exclude all themes except included themes
+design/theme/*
+!design/theme/default/
+!design/theme/gta6/
+!design/theme/vitality/
+
