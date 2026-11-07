@@ -30,7 +30,7 @@
 	border-radius: 16px;
 	background-image:
 		linear-gradient(rgba(10, 10, 15, 0.72), rgba(10, 10, 15, 0.72)),
-		linear-gradient(90deg, #ff2bd6, #7c3aed, #00e5ff);
+		linear-gradient(90deg, #ff2bd6, #7c3aed, #ff007f);
 	background-origin: border-box;
 	background-clip: padding-box, border-box;
 	box-shadow: 0 0 12px rgba(255, 43, 214, 0.35);
@@ -52,7 +52,7 @@
 	border: 1.25px solid transparent;
 	background-image:
 		linear-gradient(rgba(10, 10, 15, 0.72), rgba(10, 10, 15, 0.72)),
-		linear-gradient(90deg, #ff2bd6, #7c3aed, #00e5ff);
+		linear-gradient(90deg, #ff2bd6, #7c3aed, #ff007f);
 	background-origin: border-box;
 	background-clip: padding-box, border-box;
 	box-shadow: 0 0 12px rgba(255, 43, 214, 0.35);
@@ -63,7 +63,7 @@
         color: rgba(255, 255, 255, 0.55);
         background-image:
                 linear-gradient(rgba(28, 28, 36, 0.7), rgba(28, 28, 36, 0.7)),
-                linear-gradient(90deg, rgba(255, 43, 214, 0.55), rgba(124, 58, 237, 0.55), rgba(0, 229, 255, 0.55));
+		linear-gradient(90deg, rgba(255, 43, 214, 0.55), rgba(124, 58, 237, 0.55), rgba(255, 0, 127, 0.55));
         background-origin: border-box;
         background-clip: padding-box, border-box;
         box-shadow: 0 0 6px rgba(255, 43, 214, 0.08);
