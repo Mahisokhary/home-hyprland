@@ -42,7 +42,7 @@ require("layout.layout")
 require("design.design")
 require("compatibility.compatibility")
 
-table.insert(SERVICES, "swaybg --mode fill --image $(find '" .. WALLPAPER_DIR .. "' -maxdepth 1 -name '" .. THEME .. "*')")
+table.insert(SERVICES, "swaybg --mode fill --image $(find '" .. WALLPAPER_DIR .. "' -maxdepth 1 -name '" .. THEME .. ".*')")
 
 local function run_services()
 	for index, service in ipairs(SERVICES) do
