@@ -8,4 +8,5 @@ require("compatibility.rhythmbox")
 require("compatibility.maximize")
 require("compatibility.waybar")
 require("compatibility.modal")
+require("compatibility.steam")
 
