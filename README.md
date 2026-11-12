@@ -1,7 +1,7 @@
 # Qoqnusmaster Hyprland Configurations
 
 ## Dependency
-> Tested on hyprland `0.56.2, 0.57.0`
+> Tested on hyprland `0.57.0, 0.57.2`
 - waybar (status bar)
 - swaybg (wallpaper manager)
 - hyprpolkitagent (authentication agent)
