@@ -18,6 +18,7 @@ TRANSPARENT_APPS_CLASSES = {
 	"jetbrains-.*",
 	"org.telegram.desktop",
 	"org.gnome.Nautilus",
+	"code-oss",
 }
 SERVICES = {
 	"waybar",
